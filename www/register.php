@@ -3,7 +3,7 @@
 
 <!--Main content-->
 <h2>Register</h2>
-<form method="POST" action="index.php/register">
+<form method="POST" action="#">
 
     <input type="text" name="username" placeholder="Username" required>
     <input type="email" name="email" placeholder="Email Address" required>
