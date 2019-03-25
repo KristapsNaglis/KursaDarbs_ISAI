@@ -8,9 +8,5 @@
     <div id="header"></div>
 </div>
 
-<!--Footer-->
-</body>
-</html>
-
 <?php include("partials/footer.php")  ?>
 
