@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a3fe027-16c6-436a-996d-22d23ca7bc2d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/www/templates/viewTicket.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/partials/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/templates/partials/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/partials/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/templates/partials/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/partials/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/templates/partials/nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/public/stylesheets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/stylesheets/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/public/stylesheets/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/stylesheets/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/public/stylesheets/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/stylesheets/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/public/stylesheets/nav.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/stylesheets/nav.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/resources/stylesheets/colors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/www/resources/stylesheets/colors.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/resources/stylesheets/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/www/resources/stylesheets/index.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/resources/stylesheets/nav.sass" beforeDir="false" afterPath="$PROJECT_DIR$/www/resources/stylesheets/nav.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/support.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/support.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/public/stylesheets/homepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/stylesheets/homepage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/public/stylesheets/homepage.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/stylesheets/homepage.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/resources/stylesheets/homepage.sass" beforeDir="false" afterPath="$PROJECT_DIR$/www/resources/stylesheets/homepage.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/templates/homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/templates/homepage.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,7 +53,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5780969">
+    <splitter split-orientation="horizontal" split-proportion="0.6632714">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
@@ -88,7 +77,7 @@
           <file leaf-file-name="Ticket.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/classes/Ticket.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="351">
+                <state relative-caret-position="1566">
                   <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
                 </state>
               </provider>
@@ -97,11 +86,8 @@
           <file leaf-file-name="homepage.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/templates/homepage.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-                  <folding>
-                    <element signature="e#178#248#0#HTML" />
-                  </folding>
+                <state relative-caret-position="216">
+                  <caret line="41" column="116" selection-start-line="41" selection-start-column="116" selection-end-line="41" selection-end-column="116" />
                 </state>
               </provider>
             </entry>
@@ -118,7 +104,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/resources/stylesheets/index.sass">
               <provider selected="true" editor-type-id="text-editor">
@@ -140,7 +126,7 @@
           <file leaf-file-name="nav.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/resources/stylesheets/nav.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="739">
+                <state relative-caret-position="1647">
                   <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
                 </state>
               </provider>
@@ -149,8 +135,8 @@
           <file leaf-file-name="homepage.sass" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/resources/stylesheets/homepage.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="523">
-                  <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
+                <state relative-caret-position="172">
+                  <caret line="125" column="8" lean-forward="true" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -239,6 +225,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -307,7 +294,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,18 +337,19 @@
       <workItem from="1552921453490" duration="2316000" />
       <workItem from="1553528384061" duration="3631000" />
       <workItem from="1557331566930" duration="13538000" />
-      <workItem from="1557350255686" duration="16175000" />
+      <workItem from="1557350255686" duration="16408000" />
+      <workItem from="1557390034426" duration="10153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35851000" />
+    <option name="totallyTimeSpent" value="46237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10927505" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.110341154" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -390,6 +377,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/www/resources/stylesheets/nav.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1647">
+          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/resources/stylesheets/homepage.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2457">
+          <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -629,7 +630,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/resources/stylesheets/nav.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
+        <state relative-caret-position="1647">
           <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
         </state>
       </provider>
@@ -657,7 +658,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/classes/Ticket.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="1566">
           <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
         </state>
       </provider>
@@ -685,18 +686,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/homepage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding>
-            <element signature="e#178#248#0#HTML" />
-          </folding>
+        <state relative-caret-position="216">
+          <caret line="41" column="116" selection-start-line="41" selection-start-column="116" selection-end-line="41" selection-end-column="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/resources/stylesheets/homepage.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
+        <state relative-caret-position="172">
+          <caret line="125" column="8" lean-forward="true" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
         </state>
       </provider>
     </entry>
