@@ -1,3 +1,6 @@
+@import "colors"
+@import "functions"
+
 .mainContainer
   width: 100vw
   height: 80vh
@@ -16,22 +19,38 @@ h2, p
   width: 80vw
   height: 10%
 
+  position: relative
+
+  margin: 0 auto
+  a
+    font-weight: bold
+    font-size: 1.5rem
+    text-transform: uppercase
+
+    position: absolute
+    +centerTextInCenter
+    transition: ease-in-out .25s
+
+
 .foreground
   width: 80vw
   height: 55vh
   position: absolute
   text-shadow: 0 0 1rem black
 
+
 .foregroundLeft
   position: absolute
   bottom: .3em
   left: .3em
-
+  z-index: 2
+  pointer-events: none
   font-size: 3rem
 
 .foregroundLeftDateOfEvent
   width: 40%
   height: 55vh
+
 
 .foregroundRight
   width: 40%
@@ -44,6 +63,8 @@ h2, p
 .carouselList
   margin: 0
   padding: 0
+  pointer-events: none
+  z-index: 2
 
   list-style: none
   position: absolute
@@ -53,7 +74,6 @@ h2, p
 
 .foregroundRightVenue
   font-size: 2rem
-
 
 .background
   width: 80vw
@@ -68,7 +88,6 @@ h2, p
 
   margin: 0 auto
 
-
 .mainImageImage
   width: 100%
   height: 100%
@@ -77,12 +96,23 @@ h2, p
   border-radius: 1rem
 
   box-shadow: 0 0 1rem black
+  transition: ease-in-out .25s
+
+.mainImageImage:hover
+  box-shadow: 0 0 1rem $gray
+  transition: ease-in-out .25s
+
+#mainImageLink
+  width: 80vw
+  height: 55vh
+  position: absolute
+  cursor: pointer
+  z-index: 1
 
 .dateOfEvent.small
   position: absolute
   top: 0
   right: 0
-
 
   font-size: 1rem
 
@@ -116,14 +146,39 @@ h2, p
 
   position: absolute
 
-.backgroundCarouselImage
-  object-fit: cover
+.backgroundCarouselIndividual
   width: 20%
   height: 15vh
-  margin-left: 2.3rem
-  margin-right: 2.3rem
+  position: relative
+  float: left
+  margin-left: 2vw
+  margin-right: 2vw
+
+.backgroundCarouselImageOverlay
+  background-color: black
+  width: 100%
+  height: 100%
+  border-radius: 0.5rem
+  float: left
+  position: absolute
+  z-index: 2
+  opacity: 0.5
+  transition: ease-in-out .25s
+  cursor: pointer
+
+.backgroundCarouselImageOverlay:hover
+  opacity: 0
+  transition: ease-in-out .25s
+
+.backgroundCarouselImage
+  object-fit: cover
+  width: 100%
+  height: 15vh
+
   border-radius: 0.5rem
   box-shadow: 0 0 1rem black
+  float: left
+  position: absolute
 
 #headlines
   width: 100%
@@ -138,16 +193,18 @@ h2, p
   li
     width: 20%
     height: 100%
-    margin-left: 2.3rem
-    margin-right: 2.3rem
+    margin-left: 2vw
+    margin-right: 2vw
     text-align: right
     float: left
     position: relative
     border-radius: 0.5rem
-
 
     a
       margin-top: 1rem
       margin-bottom: 1rem
       margin-right: .3rem
       text-shadow: 0 0 1rem black
+
+
+

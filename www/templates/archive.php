@@ -3,7 +3,7 @@
 
     <h1>Ticket Archive</h1>
 
-    <ul id="headlines" class="archive">
+    <ul id="ticketsAllInfo" class="archive">
 
         <?php foreach ($results['tickets'] as $tickets) { ?>
 

@@ -1,4 +1,5 @@
 @import "colors"
+@import "functions"
 
 =styleNavLinks($fontColor)
   color: $fontColor
@@ -60,3 +61,19 @@ a:link, a:visited
 #footer
   width: 100vw
   height: 5vh
+  position: relative
+  p
+    position: absolute
+    +centerTextInBottom
+    font-weight: bold
+    letter-spacing: .5rem
+    a
+      color: $gray
+      text-transform: uppercase
+      font-weight: normal
+      letter-spacing: normal
+      transition: ease-in-out .25s
+
+    a:hover
+      color: $lightRed
+      transition: ease-in-out .25s

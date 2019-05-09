@@ -5,9 +5,15 @@
     <div class="mainContainer">
         <div class="middleContainer">
             <div class="mainImage">
-                <div class="background">
-                    <img class="mainImageImage" src="public/images/media/mesa.png">
-                </div>
+                <?php foreach ($results['tickets'] as $ticket) {
+                    if ($ticket->isMainFeatured == 1) { ?>
+                        <a id="mainImageLink" href=".?action=viewTicket&amp;ticketId=<?php echo $ticket->id ?>">
+                            <div class="background">
+                                <img class="mainImageImage" src="public/images/media/mesa.png">
+                            </div>
+                        </a>
+                    <?php }
+                } ?>
                 <div class="foreground">
                     <?php foreach ($results['tickets'] as $ticket) {
                         if ($ticket->isMainFeatured == 1) { ?>
@@ -17,15 +23,9 @@
                                 </div>
                                 <div class="foregroundRight">
                                     <ul class="carouselList">
-                                        <li><a class="foregroundRightPrice"
-                                               href=".?action=viewTicket&amp;ticketId=<?php echo $ticket->id ?>"><?php echo htmlspecialchars($ticket->price) ?>
-                                                €</a></li>
-                                        <li><a class="foregroundRightVenue"
-                                               href=".?action=viewTicket&amp;ticketId=<?php echo $ticket->id ?>"><?php echo htmlspecialchars($ticket->venue) ?></a>
-                                        </li>
-                                        <li><a class="foregroundRightTitle"
-                                               href=".?action=viewTicket&amp;ticketId=<?php echo $ticket->id ?>"><?php echo htmlspecialchars($ticket->title) ?></a>
-                                        </li>
+                                        <li><a class="foregroundRightPrice"><?php echo htmlspecialchars($ticket->price) ?> €</a></li>
+                                        <li><a class="foregroundRightVenue"><?php echo htmlspecialchars($ticket->venue) ?></a></li>
+                                        <li><a class="foregroundRightTitle"><?php echo htmlspecialchars($ticket->title) ?></a></li>
                                     </ul>
                                 </div>
                             </h2>
@@ -39,7 +39,13 @@
                         <?php
                         foreach ($results['tickets'] as $ticket) {
                             if ($ticket->id >= 2) { ?>
-                                <img class="backgroundCarouselImage" src="public/images/media/carousel<?=$ticket->id?>.png">
+                                <a href=".?action=viewTicket&amp;ticketId=<?php echo $ticket->id ?>">
+                                    <div class="backgroundCarouselIndividual">
+                                        <img class="backgroundCarouselImage"
+                                             src="public/images/media/carousel<?= $ticket->id ?>.png">
+                                        <div class="backgroundCarouselImageOverlay"></div>
+                                    </div>
+                                </a>
                             <?php }
                         } ?>
                     </div>
@@ -66,7 +72,7 @@
             </div>
         </div>
         <div class="bottomMiddleContainer">
-            <p><a href="./?action=archive">All tickets</a></p>
+            <p><a href="./?action=archive">Visas biļetes pieejamas šeit</a></p>
         </div>
     </div>
 

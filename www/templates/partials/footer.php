@@ -1,6 +1,10 @@
 <!--Footer-->
 <div id="footer">
-    GROUP IV &copy; 2019. All rights reserved. <a href="./?action=admin">Site Admin</a>. <a href="./">Go To Homepage</a>
+    <p id="footerText">
+        <a href="./?action=admin">Site Admin</a> <a href="./">Go To Homepage</a>
+        <br>
+        GROUP IV &copy; 2019. ISAI Kursa Darbs.
+    </p>
 </div>
 
 </body>
