@@ -43,9 +43,7 @@ a:link, a:visited {
 }
 
 #logoImage {
-  margin: auto 0;
-  margin-left: 2em;
-  margin-top: 3vh;
+  margin: 2vh 0 auto 2em;
   position: relative;
   height: 10vh;
   cursor: pointer;

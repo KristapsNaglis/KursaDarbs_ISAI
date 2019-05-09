@@ -1,26 +1,50 @@
 <?php include "partials/head.php" ?>
 <?php include "partials/nav.php" ?>
 
-    <h1>Ticket Archive</h1>
+    <div id="archiveContainer">
+        <h1>Visas biļetes</h1>
 
-    <ul id="ticketsAllInfo" class="archive">
 
-        <?php foreach ($results['tickets'] as $tickets) { ?>
+        <div id="archives">
+            <div id="archiveBackground">
 
-            <li>
-                <h2>
-                    <span class="pubDate"><?php echo date('j F Y', $tickets->dateOfEvent) ?></span>
-                    <a href=".?action=viewArticle&amp;articleId=<?php echo $tickets->id ?>"><?php echo htmlspecialchars($tickets->title) ?></a>
-                </h2>
-                <p class="description"><?php echo htmlspecialchars($tickets->description) ?></p>
-            </li>
+                <?php foreach ($results['tickets'] as $tickets) { ?>
 
-        <?php } ?>
+                    <img id="archiveBackgroundImage"
+                         src="public/images/ticketArchive/archive<?= $tickets->id ?>.png">
 
-    </ul>
+                <?php } ?>
 
-    <p><?php echo $results['totalRows'] ?> ticket<?php echo ($results['totalRows'] != 1) ? 's' : '' ?> in total.</p>
+            </div>
 
-    <p><a href="./">Return to Homepage</a></p>
+            <div id="archiveForeground">
+
+                <ul id="ticketsAllInfo">
+
+                    <?php foreach ($results['tickets'] as $tickets) { ?>
+
+                        <li id="ticketArchiveList">
+                            <div id="ticketArchiveListLeft">
+                                <span class="pubDate"><?php echo date('j F Y', $tickets->dateOfEvent) ?></span>
+                                <br>
+                                <a id="archiveTitle"
+                                   href=".?action=viewArticle&amp;articleId=<?php echo $tickets->id ?>"><?php echo htmlspecialchars($tickets->title) ?></a>
+                            </div>
+                            <div id="ticketArchiveListRight">
+                                <p class="description"><?php echo htmlspecialchars($tickets->description) ?></p>
+                            </div>
+                        </li>
+
+                    <?php } ?>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="archiveTotal">
+            <p><?php echo $results['totalRows'] ?> ticket<?php echo ($results['totalRows'] != 1) ? 's' : '' ?> in
+                total.</p>
+        </div>
+    </div>
 
 <?php include "partials/footer.php" ?>

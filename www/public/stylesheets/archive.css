@@ -1,0 +1,60 @@
+#ticketsAllInfo {
+  list-style: none;
+}
+
+#archiveContainer {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+#ticketArchiveList {
+  width: 80vw;
+  height: 30vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#ticketsAllInfo {
+  margin: 0;
+  padding: 0;
+}
+
+#archives {
+  width: 100%;
+  position: relative;
+}
+
+#archiveTitle {
+  width: 100%;
+  height: 100%;
+}
+
+#archiveBackground, #archiveForeground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#archiveBackground {
+  object-fit: cover;
+}
+
+#archiveForeground {
+  z-index: 10;
+}
+
+#archiveBackgroundImage {
+  width: 80vw;
+  height: 30vh;
+  object-fit: cover;
+}
+
+#ticketArchiveListLeft, #ticketArchiveListRight {
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=archive.css.map */

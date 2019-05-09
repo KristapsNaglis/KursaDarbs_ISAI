@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="public/stylesheets/index.css">
     <link rel="stylesheet" href="public/stylesheets/nav.css">
     <link rel="stylesheet" href="public/stylesheets/homepage.css">
+    <link rel="stylesheet" href="public/stylesheets/archive.css">
 </head>
 <body>
 
