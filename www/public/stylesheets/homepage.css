@@ -1,0 +1,105 @@
+.mainContainer {
+  width: 100vw;
+  height: 80vh;
+}
+
+h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+.middleContainer {
+  width: 80vw;
+  height: 90%;
+  margin: 0 auto;
+}
+
+.bottomMiddleContainer {
+  width: 80vw;
+  height: 10%;
+}
+
+.foreground {
+  width: 80vw;
+  height: 55vh;
+  position: absolute;
+  text-shadow: 0 0 1rem black;
+}
+
+.foregroundLeft {
+  position: absolute;
+  bottom: 0.3em;
+  left: 0.3em;
+  font-size: 3rem;
+}
+
+.foregroundLeftDateOfEvent {
+  width: 40%;
+  height: 55vh;
+}
+
+.foregroundRight {
+  width: 40%;
+  height: 55vh;
+  float: right;
+  text-align: right;
+}
+
+.carouselList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  bottom: 0.3em;
+  right: 0.3em;
+  font-size: 3rem;
+}
+
+.foregroundRightVenue {
+  font-size: 2rem;
+}
+
+.background {
+  width: 80vw;
+  height: 55vh;
+  position: absolute;
+}
+
+.mainImage {
+  width: 100%;
+  height: 55vh;
+  border-radius: 5vw;
+  margin: 0 auto;
+}
+
+.mainImageImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem black;
+}
+
+#headlines {
+  width: 100%;
+  height: 15vh;
+  list-style: none;
+}
+#headlines li {
+  width: 20%;
+  height: 100%;
+  display: inline-block;
+  margin: auto 0;
+}
+#headlines li h2 {
+  text-align: right;
+  padding: 1rem;
+}
+#headlines li h2 span {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=homepage.css.map */

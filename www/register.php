@@ -1,5 +1,5 @@
-<?php include("partials/head.php")  ?>
-<?php include("partials/nav.php")  ?>
+<?php include("templates/partials/head.php") ?>
+<?php include("templates/partials/nav.php") ?>
 
 <!--Main content-->
 <h2>Register</h2>
@@ -13,5 +13,5 @@
 
 </form>
 
-<?php include("partials/footer.php")  ?>
+<?php include("templates/partials/footer.php") ?>
 
