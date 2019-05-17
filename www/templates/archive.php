@@ -10,9 +10,9 @@
 
                 <?php foreach ($results['tickets'] as $tickets) { ?>
 
-                    <img id="archiveBackgroundImage"
+                    <!--<img id="archiveBackgroundImage"
                          src="public/images/ticketArchive/archive<?= $tickets->id ?>.png">
-
+-->
                 <?php } ?>
 
             </div>
@@ -35,7 +35,10 @@
                             </div>
                         </li>
 
-                    <?php } ?>
+                        <?php
+                        if(isset($_SESSION['username'])) {?>
+                            <div class="buyButton"><a>BUY BUTTON</a></div>
+                    <?php } } ?>
 
                 </ul>
             </div>

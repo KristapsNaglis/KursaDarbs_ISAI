@@ -16,11 +16,14 @@ switch ( $action ) {
     case 'about':
         about();
         break;
-    case 'support':
-        support();
+    case 'login':
+        login();
         break;
     case 'register':
         register();
+        break;
+    case 'logout':
+        logout();
         break;
     default:
         homepage();
@@ -37,10 +40,6 @@ function archive() {
 }
 
 function viewTicket() {
- /*   if ( !isset($_GET["ticketID"]) || !$_GET["ticketID"] ) {
-        homepage();
-        return;
-    }*/
 
     $results = array();
     $results['tickets'] = Ticket::getById( (int)$_GET["ticketId"] );
@@ -59,7 +58,7 @@ function homepage() {
 
 function admin(){
     $results = array();
-    $results['pageTitle'] = "Admin LogIn | GROUP IV";
+    $results['pageTitle'] = "Admin Login | GROUP IV";
     header("Location: admin.php");
 }
 
@@ -69,14 +68,20 @@ function about(){
     require("about.php");
 }
 
-function support(){
+function login(){
     $results = array();
-    $results['pageTitle'] = "Support | GROUP IV";
-    require("support.php");
+    $results['pageTitle'] = "User Login | GROUP IV";
+    header("Location: user.php");
 }
 
 function register(){
     $results = array();
-    $results['pageTitle'] = "Admin LogIn | GROUP IV";
-    require("register.php");
+    $results['pageTitle'] = "User Register | GROUP IV";
+    header("Location: user.php?action=register");
+}
+
+function logout() {
+    $results = array();
+    $results['pageTitle'] = "Logout | GROUP IV";
+    header("Location: user.php?action=logout");
 }
